@@ -1,0 +1,124 @@
+.container {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7d1128;
+    color: white;
+    padding: 10px;
+}
+
+.logoSection {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.navbar button {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+/* Election Banner */
+.electionBanner {
+    background-color: #b31331;
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Disclaimer */
+.disclaimer {
+    background-color: #fffae6;
+    color: #555;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Main Content */
+.main {
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+.nctTitle span {
+    color: #007bff;
+}
+
+/* Results Section */
+.resultsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.partyResult, .partyResultBlue {
+    width: 120px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.partyResult {
+    background-color: #f58c42;
+    margin-right: 20px;
+}
+
+.partyResultBlue {
+    background-color: #2166c1;
+}
+
+/* Tables */
+.tableContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.table, .dropdownContainer {
+    background: #e9e0ff;
+    padding: 15px;
+    border-radius: 10px;
+    width: 45%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #d0b3ff;
+}
+
+/* Dropdown */
+.dropdownContainer select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
