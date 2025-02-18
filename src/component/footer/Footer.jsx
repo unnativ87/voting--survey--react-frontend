@@ -1,4 +1,5 @@
 import styles from "./footer.module.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
     return (
@@ -10,9 +11,9 @@ function Footer() {
                     <p>The Election Commission of India is an autonomous constitutional authority responsible for administering election processes in India.</p>
                     <p>📍 Nirvachan Sadan, Ashoka Road, New Delhi 110001</p>
                     <div className={styles.socialIcons}>
-                        <a href="#" className={styles.icon}>📷</a>
-                        <a href="#" className={styles.icon}>📘</a>
-                        <a href="#" className={styles.icon}>▶</a>
+                        <Link to="#" className={styles.icon}>📷</Link>
+                        <Link to="#" className={styles.icon}>📘</Link>
+                        <Link to="#" className={styles.icon}>▶</Link>
                     </div>
                 </div>
 
@@ -20,10 +21,10 @@ function Footer() {
                 <div className={styles.section}>
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="https://www.eci.gov.in/">About ECI</a></li>
-                        <li><a href="https://www.eci.gov.in/">Apply for Voter Card</a></li>
-                        <li><a href="https://www.eci.gov.in/">Download cVIGIL</a></li>
-                        <li><a href="https://www.eci.gov.in/">Political Parties Registration</a></li>
+                        <li><Link to="https://www.eci.gov.in/">About ECI</Link></li>
+                        <li><Link to="https://www.eci.gov.in/">Apply for Voter Card</Link></li>
+                        <li><Link to="https://www.eci.gov.in/">Download cVIGIL</Link></li>
+                        <li><Link to="https://www.eci.gov.in/">Political Parties Registration</Link></li>
                     </ul>
                 </div>
 

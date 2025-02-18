@@ -1,7 +1,7 @@
 .container {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
 }
 
 /* Header */
@@ -37,14 +37,14 @@
 .electionBanner {
     background-color: #b31331;
     color: white;
-    padding: 10px;
+    padding: 80px;
     font-size: 18px;
     font-weight: bold;
 }
 
 /* Disclaimer */
 .disclaimer {
-    background-color: #fffae6;
+    background: linear-gradient(to right,#fffae6,#fffae656,#fffae68c);
     color: #555;
     padding: 10px;
     font-size: 14px;
@@ -68,22 +68,29 @@
 }
 
 .partyResult, .partyResultBlue {
-    width: 120px;
-    padding: 15px;
+    width: 250px;
+    padding: 35px;
     border-radius: 10px;
     text-align: center;
-    color: white;
-    font-size: 20px;
+    color:black;
+    font-size: 40px;
     font-weight: bold;
 }
 
+
 .partyResult {
-    background-color: #f58c42;
+    /* background-color: #dbbd13bd; */
+    background-image: url('/img/bg1.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
     margin-right: 20px;
 }
 
 .partyResultBlue {
-    background-color: #2166c1;
+    /* background-color: #2166c17c; */
+    background-image: url('/img/bg2.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensures the image covers the entire area */
+    background-repeat: no-repeat; /* Prevents tiling of the image */
 }
 
 /* Tables */

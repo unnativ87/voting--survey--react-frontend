@@ -4,7 +4,7 @@ function Home() {
     return (
         <div className={styles.container}>
             {/* Header */}
-            <header className={styles.header}>
+            {/* <header className={styles.header}>
                 <div className={styles.logoSection}>
                     <img src="/eci-logo.png" alt="ECI Logo" className={styles.logo} /> 
                     <h2>भारत निर्वाचन आयोग</h2>
@@ -15,17 +15,17 @@ function Home() {
                     <button>🌐 Hindi</button>
                     <button>🔄 Refresh</button>
                 </div>
-            </header>
+            </header> */}
 
             {/* By-Election Notice */}
-            <div className={styles.electionBanner}>
-                <strong>Bye Elections</strong>
-                <p>Milkipur (Uttar Pradesh) / Erode (East) (Tamil Nadu)</p>
-            </div>
+            {/* <div className={styles.electionBanner}> */}
+                {/* <strong>Voting Survey</strong> */}
+                {/* <p>Milkipur (Uttar Pradesh) / Erode (East) (Tamil Nadu)</p> */}
+            {/* </div> */}
 
             {/* Disclaimer */}
             <div className={styles.disclaimer}>
-                <p><strong>Disclaimer:</strong> ECI is displaying the information as being filled in the system by the Returning Officers from their respective Counting Centres. The final data for each AC/PC will be shared in Form-20.</p>
+                <p><strong>Voting Survey</strong> is a web-based application designed to facilitate the collection and analysis of voter preferences through digital surveys. The system allows users to participate in surveys related to elections, providing insights into public opinion. It ensures data integrity and transparency by storing responses securely.</p>
             </div>
 
             {/* Main Content */}
@@ -47,7 +47,7 @@ function Home() {
 
                 {/* Tables and Dropdown */}
                 <div className={styles.tableContainer}>
-                    <div className={styles.table}>
+                    {/* <div className={styles.table}>
                         <h3>Party Wise Results</h3>
                         <table>
                             <thead>
@@ -73,9 +73,9 @@ function Home() {
                                 </tr>
                             </tbody>
                         </table>
-                    </div>
+                    </div> */}
 
-                    <div className={styles.dropdownContainer}>
+                    {/* <div className={styles.dropdownContainer}>
                         <h3>Constituency Wise Results</h3>
                         <select>
                             <option>Select Constituency</option>
@@ -83,7 +83,7 @@ function Home() {
                             <option>New Delhi</option>
                             <option>South Delhi</option>
                         </select>
-                    </div>
+                    </div> */}
                 </div>
             </main>
         </div>
