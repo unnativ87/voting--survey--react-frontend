@@ -13,12 +13,17 @@
 }
 
 #nav>figure{
-    border: 1px solid rgba(255, 255, 0, 0.082);
     height: 100%;
     width: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
+
+    background-image: url('/img/bg5.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
 }
 #nav>figure>img{
     height: 100%;
@@ -35,3 +40,18 @@
 #nav>ul>li{
     text-transform: capitalize;
 }
+
+.title {
+    font-size: xx-large;
+    font-stretch:extra-expanded;
+    background: linear-gradient(to right,red, #c8e255, #f7b488,rgba(59, 59, 235, 0.829),rgb(212, 0, 255)); /* Gradient colors */
+    
+    /* Standard and vendor-prefixed properties for background-clip */
+    -webkit-background-clip: text;  /* For Chrome, Safari 3+ */
+    -moz-background-clip: text;     /* For Firefox (not required in newer versions) */
+    -o-background-clip: text;       /* For Opera */
+    background-clip: text;          /* Standard property */
+    
+    -webkit-text-fill-color: transparent; /* Needed to make the gradient visible on text */
+}
+

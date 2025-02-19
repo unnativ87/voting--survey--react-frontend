@@ -10,8 +10,7 @@ body {
     background-size: cover; /* Ensures the image covers the entire area */
     background-repeat: no-repeat; /* Prevents tiling of the image */
     background-position: center; /* Centers the image */
-    overflow-y: scroll; /* Enable vertical scrolling */
-
+    overflow-y: scroll; /* Enable vertical scrolling *
 }
 body::-webkit-scrollbar {
     display: none; /* For Chrome, Safari, Edge */
