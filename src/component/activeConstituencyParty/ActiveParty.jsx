@@ -24,7 +24,7 @@ function ActiveParty() {
     return (
         <div className={style.container}>
             <Toaster />
-            <h1>🟢 Live Active Parties</h1>
+            <h1>🟢 Live Active Party</h1>
             <div className={style.scrollContainer}>
                 {activeParties.length > 0 ? (
                     activeParties.map(party => (

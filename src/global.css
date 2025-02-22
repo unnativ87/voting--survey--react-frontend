@@ -4,6 +4,9 @@
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+h1{
+    color: black;
+}
 
 body {
     background-image: url('/img/bg6.jpg'); /* Replace with your image URL */

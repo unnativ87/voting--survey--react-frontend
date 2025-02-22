@@ -19,16 +19,36 @@ function ActiveElection() {
         }
     };
 
+    // const handleDeactivate = async (id) => {
+    //     try {
+    //         await axios.put(`http://localhost:8090/api/constituency/${id}/election-status/false`);
+    //         setActiveElections(activeElections.filter(election => election.id !== id));
+    //         toast.success("Election deactivated successfully!");
+    //     } catch (error) {
+    //         console.error("Error deactivating election:", error);
+    //         toast.error("Failed to deactivate election.");
+    //     }
+    // };
+
     const handleDeactivate = async (id) => {
         try {
+            // Deactivate the election
             await axios.put(`http://localhost:8090/api/constituency/${id}/election-status/false`);
+            
+            // Reset votes for the constituency
+            await axios.put(`http://localhost:8090/api/user/reset-votes/${id}`);
+    
+            // Update the UI by removing the deactivated election
             setActiveElections(activeElections.filter(election => election.id !== id));
+    
+            // Show success message
             toast.success("Election deactivated successfully!");
         } catch (error) {
             console.error("Error deactivating election:", error);
             toast.error("Failed to deactivate election.");
         }
     };
+    
 
     return (
         <div className={style.container}>
