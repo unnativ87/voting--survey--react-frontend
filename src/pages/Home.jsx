@@ -7,10 +7,10 @@ const VotingCards = () => {
     useEffect(() => {
         // Sample test data
         const testData = [
-            { id: 1, logo: "🟡", party: "Party ABC", votes: 120 },
-            { id: 2, logo: "🔴", party: "Party DEF", votes: 90 },
-            { id: 3, logo: "🔵", party: "Party GHI", votes: 200 },
-            { id: 4, logo: "🟢", party: "Party JKL", votes: 150 },
+            { id: 1, logo: "⭐", party: "Party ABC", votes: 120 },
+            { id: 2, logo: "🏮", party: "Party DEF", votes: 90 },
+            { id: 3, logo: "🪻", party: "Party GHI", votes: 200 },
+            { id: 4, logo: "📗", party: "Party JKL", votes: 150 },
             { id: 5, logo: "💜", party: "Party MNO", votes: 50 },
         ];
         setData(testData);

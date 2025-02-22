@@ -2,23 +2,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100vw;
-    /* background-color: #f4f4f4; */
+    height: 99vh;
+    width: 99vw;
+    border: solid rgb(0, 0, 0) 1px;
+    border-radius: 20px;
+    margin: 8px 8px ;
 }
 
 .container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 90px;
     justify-content: center;
-    padding: 20px;
+    padding: 130px;
 }
 
 .card {
-    background-image: url('/img/bg3.jpg'); /* Replace with your image URL */
-    background-size: cover; /* Ensures the image covers the entire area */
-    background-repeat: no-repeat; /* Prevents tiling of the image *
+    background-image: url('/img/bg10.jpg');
+    background-size: cover; 
+    background-repeat: no-repeat;
     /* background-color: #ffffff; */
     padding: 20px;
     border-radius: 10px;
@@ -33,17 +35,18 @@
 }
 
 .cardHighest {
-    background-image: url('/img/bg2.jpg'); /* Replace with your image URL */
+    background-image: url('/img/bg11.jpg'); /* Replace with your image URL */
     background-size: cover; /* Ensures the image covers the entire area */
     background-repeat: no-repeat; /* Prevents tiling of the image *
     /* background-color: #ffcc00; */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 3px 6px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 200px;
     font-weight: bold;
     transform: scale(1.1);
+
 }
 
 .logo {
@@ -55,11 +58,12 @@
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 5px;
+    color: rgba(246, 248, 213, 0.541);
 }
 
 .votes {
     font-size: 16px;
-    color: #333;
+    color: #ffffff;
 }
 
 /* Disclaimer */

@@ -1,54 +1,85 @@
 .footer {
-    background-color: #002147;
-    color: white;
+    background-color: #1e1e1e;
+    color: #ffffff;
     padding: 20px;
+    text-align: center;
+    font-size: 14px;
 }
 
 .container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
 }
 
 .section {
-    width: 30%;
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
 }
 
 .section h3 {
+    font-size: 18px;
     margin-bottom: 10px;
+    color: #ffcc00;
 }
 
 .section ul {
-    list-style-type: none;
+    list-style: none;
     padding: 0;
 }
 
 .section ul li {
-    margin-bottom: 5px;
+    margin: 5px 0;
 }
 
 .section ul li a {
-    color: white;
     text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s;
 }
 
-.socialIcons {
-    margin-top: 10px;
+.section ul li a:hover {
+    color: #ffcc00;
+}
+
+.socialIcons a {
+    display: inline-flex;
+    align-items: center;
+    margin: 5px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+    color: #ffcc00;
 }
 
 .icon {
-    color: white;
-    margin-right: 10px;
-    text-decoration: none;
-    font-size: 18px;
+    margin-right: 5px;
 }
 
-.appIcons img {
-    width: 50px;
-    margin-right: 10px;
+.installation {
+    margin-top: 20px;
+    padding: 15px;
+    background: #292929;
+    border-radius: 8px;
+}
+
+.installation code {
+    display: block;
+    background: #3a3a3a;
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffcc00;
+    font-weight: bold;
 }
 
 .copyright {
-    text-align: center;
     margin-top: 20px;
+    font-size: 12px;
+    opacity: 0.7;
 }

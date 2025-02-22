@@ -1,47 +1,90 @@
 import styles from "./footer.module.css";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub, faLinkedin, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
-                {/* Left Section */}
+                
+                {/* Left Section - Project Details */}
                 <div className={styles.section}>
-                    <h3>Election Commission of India</h3>
-                    <p>The Election Commission of India is an autonomous constitutional authority responsible for administering election processes in India.</p>
-                    <p>📍 Nirvachan Sadan, Ashoka Road, New Delhi 110001</p>
+                    <h3>Voting Survey React Frontend</h3>
+                    <p>
+                        A user-friendly voting survey application built with <strong>React.js</strong> and <strong>Vite</strong>. 
+                        This platform enables users to participate in surveys, cast votes, and view real-time results with ease.
+                    </p>
+                    <p>👨‍💻 <strong>Developed by: Md Mohsin Haider</strong></p>
+                    
                     <div className={styles.socialIcons}>
-                        <Link to="#" className={styles.icon}>📷</Link>
-                        <Link to="#" className={styles.icon}>📘</Link>
-                        <Link to="#" className={styles.icon}>▶</Link>
+                        <a 
+                            href="https://github.com/MdMohsinHaider" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <FontAwesomeIcon icon={faGithub} className={styles.icon} /> GitHub
+                        </a>
+                        <a 
+                            href="https://linkedin.com/in/MdMohsinHaider" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <FontAwesomeIcon icon={faLinkedin} className={styles.icon} /> LinkedIn
+                        </a>
+                        <a 
+                            href="https://twitter.com/MdMohsinHaider" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                        >
+                            <FontAwesomeIcon icon={faTwitter} className={styles.icon} /> Twitter
+                        </a>
                     </div>
                 </div>
 
-                {/* Center Section */}
+                {/* Center Section - Quick Links */}
                 <div className={styles.section}>
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><Link to="https://www.eci.gov.in/">About ECI</Link></li>
-                        <li><Link to="https://www.eci.gov.in/">Apply for Voter Card</Link></li>
-                        <li><Link to="https://www.eci.gov.in/">Download cVIGIL</Link></li>
-                        <li><Link to="https://www.eci.gov.in/">Political Parties Registration</Link></li>
+                        <li><Link to="/about">About Us</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/faq">FAQs</Link></li>
+                        <li><Link to="/terms">Terms & Conditions</Link></li>
+                        <li>
+                            <a 
+                                href="https://github.com/MdMohsinHaider/Voting-Survey-React-Frontend" 
+                                target="_blank"
+                            >
+                                GitHub Repository
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
-                {/* Right Section */}
+                {/* Right Section - Technologies Used */}
                 <div className={styles.section}>
-                    <h3>ECI Apps Links</h3>
-                    <div className={styles.appIcons}>
-                        <img src="/voterhelp.png" alt="Voter App" />
-                        <img src="/SakshamApp.png" alt="Saksham App" /> <br /> <br />
-                        <img src="/KYCApp.png" alt="KYC App" />
-                        <img src="/cVIGILCitizenApp.png" alt="Location App" />
-                    </div>
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Vite</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Axios</li>
+                        <li>React Router DOM</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
                 </div>
             </div>
 
+            {/* Copyright & Contact Section */}
             <div className={styles.copyright}>
-                <p>&copy; Copyright Election Commission of India 2024</p>
+                <p>© 2024 Voting Survey. All rights reserved. | MIT License</p>
+                <p>
+                    📧 Contact: 
+                    <a href="mailto:mdmohsinhaider@example.com">
+                        <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> mdmohsinhaider@example.com
+                    </a>
+                </p>
             </div>
         </footer>
     );
