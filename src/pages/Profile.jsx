@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import styles from "./profile.module.css";
 import { toast } from "react-hot-toast";
-import ConstituencyTable from "../component/constituencyTableAndParty/ConstituencyTable"
+// import ConstituencyTable from "../component/constituencyTableAndParty/ConstituencyTable"
+import SearchAllPartiesByConstituencyIdOrName from "../component/getPartiesByConstituencyIdOrName/SearchAllPartiesByConstituencyIdOrName"
 
 function Profile() {
     const [user, setUser] = useState(null);
@@ -89,7 +90,7 @@ function Profile() {
                 </div>
             </div>
             <div className={styles.constituencyTableContainer}>
-                <ConstituencyTable/>
+                <SearchAllPartiesByConstituencyIdOrName/>
             </div>
         </div>
     );

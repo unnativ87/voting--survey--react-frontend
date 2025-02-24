@@ -29,19 +29,30 @@ const Register = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        
+        // Age validation: must be 18 or above
+        if (parseInt(formData.age, 10) < 18) {
+            toast.error("You must be at least 18 years old to register.");
+            return; // Stop form submission
+        }
+    
         console.log(formData);
-
-        axios.post("http://localhost:8090/api/user/register", { ...formData, hasVoted: false }) 
-            .then(() => {
-                console.log("Voter registered successfully");
-                toast.success('Voter registered successfully');
-                navigate("/login");
+    
+        axios.post("http://localhost:8090/api/user/register", { ...formData, hasVoted: false })
+            .then((response) => {
+                if (response.status === 201) {  // Check if registration was successful
+                    toast.success("Voter registered successfully");
+                    navigate("/login");
+                }
             })
-            .catch((err) => {
-                console.log(err);
-                toast.error("Registration failed.");
+            .catch((error) => {
+                if (error.response && error.response.status === 409) {
+                    toast.error(error.response.data); // Display the conflict message from backend
+                } else {
+                    toast.error("Registration failed. Please try again.");
+                }
             });
-
+    
         setFormData({
             voterId: '',
             name: '',
@@ -54,6 +65,8 @@ const Register = () => {
             constituencyNumber: ''
         });
     };
+    
+    
 
     return (
         <div className={styles.container}>

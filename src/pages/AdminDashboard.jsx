@@ -17,6 +17,7 @@ const AdminDashboard = () => {
             <div className={style.component}><ActiveParty/></div>
         </div>
             <div className={style.component}><LiveAgainElection/></div>
+            <br />
             <div className={style.component}><ConstituencyTable/></div>
         </>
     );
