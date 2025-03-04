@@ -52,10 +52,10 @@ function PartyRegister() {
                 <label>Candidate Name:</label>
                 <input type="text" name="candidateName" value={formData.candidateName} onChange={handleChange} required />
                 
-                <label>Party Symbol (Image URL):</label>
+                <label>Party Symbol :</label>
                 <input type="text" name="img" value={formData.img} onChange={handleChange} required />
                 
-                <label>Candidate Image (URL):</label>
+                <label>Candidate Image :</label>
                 <input type="text" name="candidateImg" value={formData.candidateImg} onChange={handleChange} required />
                 
                 <label>Constituency Number:</label>

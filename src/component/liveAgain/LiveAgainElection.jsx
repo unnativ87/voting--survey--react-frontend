@@ -22,25 +22,58 @@ function LiveAgainElection() {
         }
     };
 
-    // Function to handle the PUT request
+    // // Function to handle the PUT request
+    // const startLiveElection = async () => {
+    //     if (!constituencyNumber || Number(constituencyNumber) < 1 || Number(constituencyNumber) > 543) {
+    //         toast.error("Please enter a valid constituency number (1-543)!");
+    //         return;
+    //     }
+
+    //     const apiUrl = `http://localhost:8090/api/constituency/${constituencyNumber}/election-status/true`;
+
+    //     try {
+    //         const response = await axios.put(apiUrl);
+    //         toast.success(`Election Live for Constituency ${constituencyNumber}!`);
+    //         alert("Make sure previous all survey inactive ⚠️ ")
+    //         console.log("Response:", response.data);
+    //     } catch (error) {
+    //         console.error("Error updating election status:", error);
+    //         toast.error("Failed to start live election.");
+    //     }
+    // };
+
     const startLiveElection = async () => {
         if (!constituencyNumber || Number(constituencyNumber) < 1 || Number(constituencyNumber) > 543) {
             toast.error("Please enter a valid constituency number (1-543)!");
             return;
         }
-
-        const apiUrl = `http://localhost:8090/api/constituency/${constituencyNumber}/election-status/true`;
-
+    
+        const resetVotesApi = `http://localhost:8090/api/party/resetVotes?constituencyId=${constituencyNumber}`;
+        const electionStatusApi = `http://localhost:8090/api/constituency/${constituencyNumber}/election-status/true`;
+    
         try {
-            const response = await axios.put(apiUrl);
+            // Step 1: Reset votes first
+            const resetResponse = await axios.put(resetVotesApi);
+    
+            if (resetResponse.data !== "All votes reset successfully.") {
+                toast.error("Failed to reset votes!");
+                return;
+            }
+    
+            toast.success("Votes reset successfully!");
+    
+            // Step 2: Start live election
+            const electionResponse = await axios.put(electionStatusApi);
             toast.success(`Election Live for Constituency ${constituencyNumber}!`);
-            alert("Make sure previous all survey inactive ⚠️ ")
-            console.log("Response:", response.data);
+            alert("Make sure previous all survey inactive ⚠️ ");
+            console.log("Election Response:", electionResponse.data);
+    
         } catch (error) {
-            console.error("Error updating election status:", error);
+            console.error("Error:", error);
             toast.error("Failed to start live election.");
         }
     };
+    
 
     return (
         <div className={style.container}>
