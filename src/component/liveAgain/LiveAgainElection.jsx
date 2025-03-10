@@ -72,6 +72,8 @@ function LiveAgainElection() {
             console.error("Error:", error);
             toast.error("Failed to start live election.");
         }
+
+        setConstituencyNumber("");
     };
     
 

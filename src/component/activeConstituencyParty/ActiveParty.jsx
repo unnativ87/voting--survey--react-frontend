@@ -14,7 +14,7 @@ function ActiveParty() {
         try {
             const response = await axios.get("http://localhost:8090/api/party/activeConstituenciePartys");
             setActiveParties(response.data);
-            toast.success("Live active constituency parties loaded successfully!");
+            // toast.success("Live active constituency parties loaded successfully!");
         } catch (error) {
             console.error("Error fetching active parties:", error);
             toast.error("Failed to load live active parties.");
