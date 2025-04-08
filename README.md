@@ -84,6 +84,6 @@ Contributions are welcome! Feel free to fork the repo and submit pull requests.
 This project is licensed under the MIT License.
 
 ## Contact
-Developed by **Md Mohsin Haider**
-- **GitHub**: [MdMohsinHaider](https://github.com/MdMohsinHaider)
+Developed by **unnati varshney**
+- **GitHub**: [unnativ87](https://github.com/)
 
