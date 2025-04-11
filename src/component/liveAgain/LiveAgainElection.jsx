@@ -15,7 +15,7 @@ function LiveAgainElection() {
             return; // Prevents non-numeric input
         }
 
-        if (value === "" || (Number(value) >= 1 && Number(value) <= 543)) {
+        if (value === "" || (Number(value) >=1 && Number(value) <=1000)) {
             setConstituencyNumber(value);
         } else {
             toast.error("Constituency number must be between 1 and 543!");
@@ -43,7 +43,7 @@ function LiveAgainElection() {
     // };
 
     const startLiveElection = async () => {
-        if (!constituencyNumber || Number(constituencyNumber) < 1 || Number(constituencyNumber) > 543) {
+        if (!constituencyNumber || Number(constituencyNumber) <1|| Number(constituencyNumber) >1000) {
             toast.error("Please enter a valid constituency number (1-543)!");
             return;
         }

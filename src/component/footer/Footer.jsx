@@ -16,25 +16,25 @@ function Footer() {
                         A user-friendly voting survey application built with <strong>React.js</strong> and <strong>Vite</strong>. 
                         This platform enables users to participate in surveys, cast votes, and view real-time results with ease.
                     </p>
-                    <p>👨‍💻 <strong>Developed by: Md Mohsin Haider</strong></p>
+                    <p>👨‍💻 <strong>Developed by: Unnati</strong></p>
                     
                     <div className={styles.socialIcons}>
                         <a 
-                            href="https://github.com/MdMohsinHaider" 
+                            href="unnati" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
                             <FontAwesomeIcon icon={faGithub} className={styles.icon} /> GitHub
                         </a>
                         <a 
-                            href="https://linkedin.com/in/MdMohsinHaider" 
+                            href="unnati" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
                             <FontAwesomeIcon icon={faLinkedin} className={styles.icon} /> LinkedIn
                         </a>
                         <a 
-                            href="https://twitter.com/MdMohsinHaider" 
+                            href="unnti" 
                             target="_blank" 
                             rel="noopener noreferrer"
                         >
@@ -53,7 +53,7 @@ function Footer() {
                         <li><Link to="/terms">Terms & Conditions</Link></li>
                         <li>
                             <a 
-                                href="https://github.com/MdMohsinHaider/Voting-Survey-React-Frontend" 
+                                href="unnati" 
                                 target="_blank"
                             >
                                 GitHub Repository
@@ -81,8 +81,8 @@ function Footer() {
                 <p>© 2024 Voting Survey. All rights reserved. | MIT License</p>
                 <p>
                     📧 Contact: 
-                    <a href="mailto:mdmohsinhaider@example.com">
-                        <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> mdmohsinhaider@example.com
+                    <a href="mailto:unnati@example.com">
+                        <FontAwesomeIcon icon={faEnvelope} className={styles.icon} /> unnati@example.com
                     </a>
                 </p>
             </div>
